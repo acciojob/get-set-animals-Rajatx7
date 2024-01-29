@@ -7,20 +7,25 @@ class Animal {
 	}
 
 	makeSound(){
-		console.log("sound")
-	}
-}
-
-
-class Dog extends Animal {
-	bark(){
-		console.log("woof")
+		console.log("sound");
 	}
 }
 
 class Cat extends Animal {
 	purr(){
-		console.log("purr")
+		console.log("purr");
+	}
+	makeSound(){
+		console.log(`The ${this._species} makes a sound`);
+	}
+}
+
+class Dog extends Animal {
+	bark(){
+		console.log("woof");
+	}
+	makeSound(){
+		console.log(`The ${this._species} makes a sound`);
 	}
 }
 
